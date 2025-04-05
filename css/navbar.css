@@ -12,6 +12,7 @@ header {
     background-color: var(--oxford-blue);
     position: fixed;
     top: 0;
+    z-index: 999;
   }
 
   nav {
