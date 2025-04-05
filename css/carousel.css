@@ -1,8 +1,8 @@
 .carousel {
     position: relative;
-    height: 50vw;
-    width: 60%;
-    margin: 7em auto;
+    height: 55vw;
+    width: 60vw;
+    margin: 15em auto 7em auto;
     border: 1px solid black;
 }
 
@@ -46,11 +46,11 @@
 }
 
 .carousel__button--left {
-    left: -5%;
+    left: -15%;
 }
 
 .carousel__button--right {
-    right: -5%;
+    right: -15%;
 }
 .carousel__button img {
     width: 30px;
@@ -65,8 +65,8 @@
 .carousel__indicator {
     border: 0;
     border-radius: 50%;
-    width: 15px;
-    height: 15px;
+    width: 5px;
+    height: 5px;
     background: rgb(0, 0, 0, .3);
     margin: 0 12px;
     cursor: pointer;
@@ -78,4 +78,29 @@
 
 .is-hidden {
     display: none;
+}
+
+@media(min-width: 60em) {
+
+    .carousel {
+        position: relative;
+        height: 30vw;
+        width: 35vw;
+       
+    }
+    
+  
+    .carousel__button--left {
+        left: -5%;
+    }
+    
+    .carousel__button--right {
+        right: -5%;
+    }
+    .carousel__indicator {
+       
+        width: 15px;
+        height: 15px;
+        
+    }
 }

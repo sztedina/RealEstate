@@ -2,9 +2,9 @@
 header {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    gap: 1em;
+    justify-content: center;
     list-style: none;
     position: relative;
     align-items: center;
@@ -15,11 +15,7 @@ header {
     z-index: 999;
   }
 
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
+  
 
 
   header::after {
@@ -33,9 +29,10 @@ header {
   }
 
   .navbar-left > ul {
-    max-width: 50%;
+    
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1em;
     list-style: none;
   }
@@ -49,7 +46,7 @@ header {
   }
 
   .navbar-right ul li {
-    display: inline-block;
+    display: block;
     position: relative;
   }
 
@@ -103,4 +100,21 @@ ul li:hover ul.dropdown {
     justify-content: center;
     align-items: center;
     padding: 0.05em;
+}
+
+@media(min-width: 60em) {
+  header {
+    flex-direction: row;
+    padding-left: 3em;
+    padding-right: 3em;
+    justify-content: space-between;
+    gap: 1em;
+  }
+
+  .navbar-left > ul {
+    max-width: 50%;
+   
+    
+  }
+  
 }
