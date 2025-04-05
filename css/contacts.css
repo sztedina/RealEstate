@@ -1,0 +1,28 @@
+* Contacts Page */
+
+.contacts {
+  padding: 2em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  font-size: 1.3rem;
+}
+.contacts a {
+    display: block;
+  color: var(--prussian-blue);
+}
+
+iframe {
+  margin-bottom: 0;
+  width: 100%;
+  height: 30vh;
+}
+
+section {
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+}

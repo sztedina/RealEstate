@@ -1,0 +1,10 @@
+.mission-section {
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+}
+
+.mission-section article {
+    margin-top: 2em;
+}

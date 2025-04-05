@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type=“image/x-icon” href="favicon.ico">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+    <link rel="stylesheet" href="./css/intro.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>Gallery Page</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar-left">
+            <ul>
+                <li><a href="index.html"><img class="header-logo" src="./images/logo.svg" alt="Agency logo"
+                            srcset=""></a></li>
+                <li class="social-link"><a href="#"><img class="fc" src="./images/facebook-svgrepo-com.svg"
+                            alt="Facebook logo"></a></li>
+                <li class="social-link"><a href="#"><img src="./images/twitter.svg" alt="Twitter logo"></a></li>
+                <li class="social-link"><a href="#"><img src="./images/linkedin.svg" alt="linkedin logo"></a></li>
+                <li class="social-link"> <a href="#"><img src="./images/youtube-svgrepo-com.svg" alt="Youtube logo"></a>
+                </li>
+            </ul>
+
+        </nav>
+        <nav class="navbar-right">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="#our-mission-article">Our Mission</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="filter.html">Search</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="hero-section">
+            <h1>Our exclusive properties</h1>
+            <p>Properties for buying</p>
+        </article>
+
+        <article class="container">
+            <div class="pagination" id="pagination">
+                <div id="pagination">
+                    <button id="prev">Previous</button>
+                    <span id="page-numbers"></span>
+                    <button id="next">Next</button>
+                </div>
+            </div>
+            <div id="cards-container" class="cards">
+                <!-- <div class="card">
+                    <p class="buy">buy</p>
+                    <img src="images/Building/house1.jpg" alt="" alt="">
+                    <div class="house-data">
+                        <p class="numbers">Main Street 15</p>
+                        <p class="city">Vrbnik, Croatia</p>
+                        <p class="price">$850,000</p>
+                    </div>
+                    <div class="data-icons">
+                        <div>
+                            <p class="subtitle">Beds</p>
+                            <p class="numbers">4</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Baths</p>
+                            <p class="numbers">2</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Levels</p>
+                            <p class="numbers">2</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Sqft</p>
+                            <p class="numbers">1234</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="buy">buy</p>
+                    <img src="images/Building/house1.jpg" alt="" alt="">
+                    <div class="house-data">
+                        <p class="numbers">Main Street 15</p>
+                        <p class="city">Vrbnik, Croatia</p>
+                        <p class="price">$850,000</p>
+                    </div>
+                    <div class="data-icons">
+                        <div>
+                            <p class="subtitle">Beds</p>
+                            <p class="numbers">4</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Baths</p>
+                            <p class="numbers">2</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Levels</p>
+                            <p class="numbers">2</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Sqft</p>
+                            <p class="numbers">1234</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="buy">buy</p>
+                    <img src="images/Building/house1.jpg" alt="" alt="">
+                    <div class="house-data">
+                        <p class="numbers">Main Street 15</p>
+                        <p class="city">Vrbnik, Croatia</p>
+                        <p class="price">$850,000</p>
+                    </div>
+                    <div class="data-icons">
+                        <div>
+                            <p class="subtitle">Beds</p>
+                            <p class="numbers">4</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Baths</p>
+                            <p class="numbers">2</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Levels</p>
+                            <p class="numbers">2</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Sqft</p>
+                            <p class="numbers">1234</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="buy">buy</p>
+                    <img src="images/Building/house1.jpg" alt="" alt="">
+                    <div class="house-data">
+                        <p class="numbers">Main Street 15</p>
+                        <p class="city">Vrbnik, Croatia</p>
+                        <p class="price">$850,000</p>
+                    </div>
+                    <div class="data-icons">
+                        <div>
+                            <p class="subtitle">Beds</p>
+                            <p class="numbers">4</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Baths</p>
+                            <p class="numbers">2</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Levels</p>
+                            <p class="numbers">2</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Sqft</p>
+                            <p class="numbers">1234</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="buy">buy</p>
+                    <img src="images/Building/house1.jpg" alt="" alt="">
+                    <div class="house-data">
+                        <p class="numbers">Main Street 15</p>
+                        <p class="city">Vrbnik, Croatia</p>
+                        <p class="price">$850,000</p>
+                    </div>
+                    <div class="data-icons">
+                        <div>
+                            <p class="subtitle">Beds</p>
+                            <p class="numbers">4</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Baths</p>
+                            <p class="numbers">2</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Levels</p>
+                            <p class="numbers">2</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Sqft</p>
+                            <p class="numbers">1234</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="buy">buy</p>
+                    <img src="images/Building/house1.jpg" alt="" alt="">
+                    <div class="house-data">
+                        <p class="numbers">Main Street 15</p>
+                        <p class="city">Vrbnik, Croatia</p>
+                        <p class="price">$850,000</p>
+                    </div>
+                    <div class="data-icons">
+                        <div>
+                            <p class="subtitle">Beds</p>
+                            <p class="numbers">4</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Baths</p>
+                            <p class="numbers">2</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Levels</p>
+                            <p class="numbers">2</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Sqft</p>
+                            <p class="numbers">1234</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="buy">buy</p>
+                    <img src="images/Building/house1.jpg" alt="" alt="">
+                    <div class="house-data">
+                        <p class="numbers">Main Street 15</p>
+                        <p class="city">Vrbnik, Croatia</p>
+                        <p class="price">$850,000</p>
+                    </div>
+                    <div class="data-icons">
+                        <div>
+                            <p class="subtitle">Beds</p>
+                            <p class="numbers">4</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Baths</p>
+                            <p class="numbers">2</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Levels</p>
+                            <p class="numbers">2</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Sqft</p>
+                            <p class="numbers">1234</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="buy">buy</p>
+                    <img src="images/Building/house1.jpg" alt="" alt="">
+                    <div class="house-data">
+                        <p class="numbers">Main Street 15</p>
+                        <p class="city">Vrbnik, Croatia</p>
+                        <p class="price">$850,000</p>
+                    </div>
+                    <div class="data-icons">
+                        <div>
+                            <p class="subtitle">Beds</p>
+                            <p class="numbers">4</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Baths</p>
+                            <p class="numbers">2</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Levels</p>
+                            <p class="numbers">2</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Sqft</p>
+                            <p class="numbers">1234</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="buy">buy</p>
+                    <img src="images/Building/house1.jpg" alt="" alt="">
+                    <div class="house-data">
+                        <p class="numbers">Main Street 15</p>
+                        <p class="city">Vrbnik, Croatia</p>
+                        <p class="price">$850,000</p>
+                    </div>
+                    <div class="data-icons">
+                        <div>
+                            <p class="subtitle">Beds</p>
+                            <p class="numbers">4</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Baths</p>
+                            <p class="numbers">2</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Levels</p>
+                            <p class="numbers">2</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Sqft</p>
+                            <p class="numbers">1234</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="buy">buy</p>
+                    <img src="images/Building/house1.jpg" alt="" alt="">
+                    <div class="house-data">
+                        <p class="numbers">Main Street 15</p>
+                        <p class="city">Vrbnik, Croatia</p>
+                        <p class="price">$850,000</p>
+                    </div>
+                    <div class="data-icons">
+                        <div>
+                            <p class="subtitle">Beds</p>
+                            <p class="numbers">4</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Baths</p>
+                            <p class="numbers">2</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Levels</p>
+                            <p class="numbers">2</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Sqft</p>
+                            <p class="numbers">1234</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="buy">buy</p>
+                    <img src="images/Building/house1.jpg" alt="" alt="">
+                    <div class="house-data">
+                        <p class="numbers">Main Street 15</p>
+                        <p class="city">Vrbnik, Croatia</p>
+                        <p class="price">$850,000</p>
+                    </div>
+                    <div class="data-icons">
+                        <div>
+                            <p class="subtitle">Beds</p>
+                            <p class="numbers">4</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Baths</p>
+                            <p class="numbers">2</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Levels</p>
+                            <p class="numbers">2</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Sqft</p>
+                            <p class="numbers">1234</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="buy">buy</p>
+                    <img src="images/Building/house1.jpg" alt="" alt="">
+                    <div class="house-data">
+                        <p class="numbers">Main Street 15</p>
+                        <p class="city">Vrbnik, Croatia</p>
+                        <p class="price">$850,000</p>
+                    </div>
+                    <div class="data-icons">
+                        <div>
+                            <p class="subtitle">Beds</p>
+                            <p class="numbers">4</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Baths</p>
+                            <p class="numbers">2</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Levels</p>
+                            <p class="numbers">2</p>
+                        </div>
+                        <div>
+                            <p class="subtitle">Sqft</p>
+                            <p class="numbers">1234</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </article>
+
+        <article class="intro-section">
+            <div>
+                <h1>Join our community!</h1>
+                <p>We offer a comprehensive suite of core services built on three pillars:
+                    Construction Management and Advisory, Engineering and Technical Services, and Financial Analysis and
+                    Risk Assessment. These pillars form the foundation of our expertise, ensuring that every phase of
+                    real estate development is handled with precision and care. In addition, we provide Property
+                    Management and Brokerage services, offering a seamless experience from development to ongoing
+                    management and transactions. We cater to the needs of discerning clients, managing each project with
+                    unparalleled attention to detail and professionalism.</p>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="footer-upper-container">
+            <img class="header-logo" src="./images/logo.svg" alt="Agency logo">
+            <div class="footer-social-links">
+                <a href="#"><img class="social-link fc" src="./images/facebook-svgrepo-com.svg" alt="Facebook logo"></a>
+                <a href="#"><img class="social-link" src="./images/twitter.svg" alt="Twitter logo"></a>
+                <a href="#"><img class="social-link" src="./images/linkedin.svg" alt="linkedin logo"></a>
+                <a href="#"><img class="social-link" src="./images/youtube-svgrepo-com.svg" alt="Youtube logo"></a>
+            </div>
+            <p>1101 Main Street<br>
+                Budapest, Pest County, 1114<br>
+                <a href="mailto:szt.edina@gmail.com">info@realestate.com</a>
+            </p>
+        </div>
+        <div>
+            <p>
+                &copy; 2025 - Designed & developed by
+                <a href="https://sztedi.netlify.app/" class="link">Sztedina</a>.
+            </p>
+        </div>
+        <a href="#top" class="back-to-top" title="Back to Top">
+            <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
+        </a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

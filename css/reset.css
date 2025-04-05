@@ -1,0 +1,72 @@
+:root {
+    --white: hsla(0, 0%, 100%, 1);
+    --oxford-blue: hsla(211, 59%, 12%, 1);
+    --light-oxford-blue: rgb(41, 96, 158);
+    --prussian-blue: hsla(211, 37%, 19%, 1);
+    --charcoal: hsla(211, 27%, 25%, 1);
+    --white-2: hsla(0, 0%, 100%, 1);
+    
+  }
+  
+  /* CSS RESET */
+  
+  /* Box sizing rules */
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Prevent font size inflation */
+  html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+  }
+  
+  /* Set core body defaults */
+  body {
+    min-height: 100vh;
+    line-height: 1.5;
+    background-color: var(--white-2);
+    font-size: 16px;
+    text-align: center;
+    overflow-x: hidden;
+ 
+  }
+  /* Make images easier to work with */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Set shorter line heights on headings and interactive elements */
+  h1, h2, h3, h4,
+  button, input, label, textarea {
+    line-height: 1.1;
+    font-family: inherit;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    padding-bottom: 1em;
+  }
+  
+  /* Balance text wrapping on headings */
+  h1, h2,
+  h3, h4 {
+    text-wrap: balance;
+  }
+  
+  /* Inherit fonts for inputs and buttons */
+  input, button {
+    font-size: inherit;
+  }
+  
+  /* Anything that has been anchored to should have extra scroll margin */
+  :target {
+    scroll-margin-block: 5ex;
+  }

@@ -1,0 +1,12 @@
+.indicator {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.indicator li  {
+    transition: 0.5s;
+}
+
+.indicator li a:hover {
+    color: red;
+}

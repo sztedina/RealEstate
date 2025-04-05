@@ -1,0 +1,13 @@
+/* Intro SECTION */
+
+.intro-section {
+    background-color: var(--charcoal);
+    padding: 3em 1em;
+    color: var(--white-2);
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    letter-spacing: 1.2px;
+    justify-content: center;
+    align-items: center;
+}

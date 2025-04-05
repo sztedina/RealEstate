@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type=“image/x-icon” href="favicon.ico">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="./css/intro.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>New Properties</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar-left">
+            <ul>
+                <li><a href="index.html"><img class="header-logo" src="./images/logo.svg" alt="Agency logo"
+                            srcset=""></a></li>
+                <li class="social-link"><a href="#"><img class="fc" src="./images/facebook-svgrepo-com.svg"
+                            alt="Facebook logo"></a></li>
+                <li class="social-link"><a href="#"><img src="./images/twitter.svg" alt="Twitter logo"></a></li>
+                <li class="social-link"><a href="#"><img src="./images/linkedin.svg" alt="linkedin logo"></a></li>
+                <li class="social-link"> <a href="#"><img src="./images/youtube-svgrepo-com.svg" alt="Youtube logo"></a>
+                </li>
+            </ul>
+
+        </nav>
+        <nav class="navbar-right">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="#our-mission-article">Our Mission</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="filter.html">Search</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="carousel">
+            <button class="carousel__button carousel__button--left is-hidden">
+                <img src="images/carousel/left.svg" alt="left arrow">
+            </button>
+            <div class="carousel__track-container">
+                <ul class="carousel_track" id="carousel_track">
+                    <!-- <li class="carousel__slide current-slide">
+                        <img class="carousel__image" src="images/Building/house1.jpg" alt="">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="images/Building/house2.jpg" alt="">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="images/Building/house3.jpg" alt="">
+                    </li> -->
+                </ul>
+            </div>
+            <button class="carousel__button carousel__button--right">
+                <img src="images/carousel/right.svg" alt="right arrow">
+            </button>
+
+            <div class="carousel__nav" id="carousel__nav">
+                <!-- <button class="carousel__indicator current-slide"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button> -->
+            </div>
+        </div>
+
+        <section class="mission-section">
+
+
+            <article id="our-mission-article">
+                <h1>Our mission</h1>
+                <p>At Real Estate Agency, our mission is to redefine excellence in real estate development by delivering
+                    high-end, bespoke residential properties tailored to the expectations of discerning buyers. As a
+                    newly
+                    established firm, we are committed to providing unparalleled service, working alongside the
+                    industry's
+                    leading architects and engineers to execute projects that set new standards of luxury, innovation
+                    and
+                    precision. Our brokerage division breaks from tradition, bringing a faster, more efficient US-style
+                    approach to property transactions in Croitia. We aim to be a driving force in the luxury property
+                    market,
+                    consistently delivering value and distinction.</p>
+
+            </article>
+            <img src="./images/mission.webp" alt="mission photo">
+            <article>
+                <h1>Our Values</h1>
+                <p>Excellence, Professionalism, Customer Satisfaction and Passion form the cornerstone of everything we
+                    do
+                    at Magna Graecia. These values are not merely aspirational; they are guiding principles that
+                    underpin
+                    every aspect of our operations and client interactions. With an unwavering commitment to integrity
+                    and a
+                    360-degree respect for both the industry and our clients, we ensure that every project reflects our
+                    dedication to the highest standards of quality and service.</p>
+            </article>
+            <article>
+                <h1>Our Services</h1>
+                <p>our services are tailored for international clients who possess the discernment and sophistication to
+                    recognize exceptional opportunities when they see them. We cater to individuals with refined tastes
+                    and
+                    a deep understanding of value, helping them unlock cross-border real estate opportunities and
+                    bespoke
+                    investment solutions. With a blend of global insights and local expertise, we ensure that our
+                    clients'
+                    investments are not only optimized but strategically positioned for long-term profitability and
+                    success.</p>
+            </article>
+        </section>
+        <article class="intro-section">
+            <div>
+                <h1>Join our community!</h1>
+                <p>We offer a comprehensive suite of core services built on three pillars:
+                    Construction Management and Advisory, Engineering and Technical Services, and Financial Analysis
+                    and
+                    Risk Assessment. These pillars form the foundation of our expertise, ensuring that every phase
+                    of
+                    real estate development is handled with precision and care. In addition, we provide Property
+                    Management and Brokerage services, offering a seamless experience from development to ongoing
+                    management and transactions. We cater to the needs of discerning clients, managing each project
+                    with
+                    unparalleled attention to detail and professionalism.</p>
+            </div>
+        </article>
+
+    </main>
+    <footer>
+        <div class="footer-upper-container">
+            <img class="header-logo" src="./images/logo.svg" alt="Agency logo">
+            <div class="footer-social-links">
+                <a href="#"><img class="social-link fc" src="./images/facebook-svgrepo-com.svg" alt="Facebook logo"></a>
+                <a href="#"><img class="social-link" src="./images/twitter.svg" alt="Twitter logo"></a>
+                <a href="#"><img class="social-link" src="./images/linkedin.svg" alt="linkedin logo"></a>
+                <a href="#"><img class="social-link" src="./images/youtube-svgrepo-com.svg" alt="Youtube logo"></a>
+            </div>
+            <p>1101 Main Street<br>
+                Budapest, Pest County, 1114<br>
+                <a href="mailto:szt.edina@gmail.com">info@realestate.com</a>
+            </p>
+        </div>
+        <div>
+            <p>
+                &copy; 2025 - Designed & developed by
+                <a href="https://sztedi.netlify.app/" class="link">Sztedina</a>.
+            </p>
+        </div>
+        <a href="#top" class="back-to-top" title="Back to Top">
+            <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
+        </a>
+    </footer>
+    <!-- <script src="/script.js" type="module"></script> -->
+    <script src="carousel.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type=“image/x-icon” href="favicon.ico">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/filter.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+    <link rel="stylesheet" href="./css/intro.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>Gallery Page</title>
+    <style>
+        .indicator li a {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar-left">
+            <ul>
+                <li><a href="index.html"><img class="header-logo" src="./images/logo.svg" alt="Agency logo"
+                            srcset=""></a></li>
+                <li class="social-link"><a href="#"><img class="fc" src="./images/facebook-svgrepo-com.svg"
+                            alt="Facebook logo"></a></li>
+                <li class="social-link"><a href="#"><img src="./images/twitter.svg" alt="Twitter logo"></a></li>
+                <li class="social-link"><a href="#"><img src="./images/linkedin.svg" alt="linkedin logo"></a></li>
+                <li class="social-link"> <a href="#"><img src="./images/youtube-svgrepo-com.svg" alt="Youtube logo"></a>
+                </li>
+            </ul>
+
+        </nav>
+        <nav class="navbar-right">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="#our-mission-article">Our Mission</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="filter.html">Search</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    </header>
+
+    <main>
+        <article class="hero-section">
+            <h1>Our exclusive properties</h1>
+            <p>Properties for buying</p>
+        </article>
+        <ul class="indicator">
+            <li data-filter="all" class="active"><a href="#">All</a></li>
+            <li data-filter="Vrbnik"><a href="#">Vrbnik</a></li>
+            <li data-filter="Krk"><a href="#">Krk</a></li>
+            <li data-filter="Malinska"><a href="#">Malinska</a></li>
+            <li data-filter="Baska"><a href="#">Baska</a></li>
+            <li data-filter="Omnisalj"><a href="#">Omnisalj</a></li>
+        </ul>
+
+        <div id="cards-container" class="cards">
+
+        </div>
+        <!-- <ul class="items">
+            <li data-category="Vrbnik">
+                <img src="./images/Building/house1.jpg" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab soluta doloremque, libero tempora
+                    nostrum commodi, totam quia repellat enim vel quam nemo sequi porro facilis ducimus sed
+                    voluptatibus, numquam recusandae!</p>
+            </li>
+            <li data-category="Vrbnik">
+                <img src="./images/Building/house2.jpg" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab soluta doloremque, libero tempora
+                    nostrum commodi, totam quia repellat enim vel quam nemo sequi porro facilis ducimus sed
+                    voluptatibus, numquam recusandae!</p>
+            </li>
+            <li data-category="Vrbnik">
+                <img src="./images/Building/house3.jpg" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab soluta doloremque, libero tempora
+                    nostrum commodi, totam quia repellat enim vel quam nemo sequi porro facilis ducimus sed
+                    voluptatibus, numquam recusandae!</p>
+            </li>
+            <li data-category="Krk">
+                <img src="./images/Building/house4.jpg" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab soluta doloremque, libero tempora
+                    nostrum commodi, totam quia repellat enim vel quam nemo sequi porro facilis ducimus sed
+                    voluptatibus, numquam recusandae!</p>
+            </li>
+            <li data-category="Krk">
+                <img src="./images/Building/house5.jpg" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab soluta doloremque, libero tempora
+                    nostrum commodi, totam quia repellat enim vel quam nemo sequi porro facilis ducimus sed
+                    voluptatibus, numquam recusandae!</p>
+            </li>
+            <li data-category="Krk">
+                <img src="./images/Building/house6.jpg" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab soluta doloremque, libero tempora
+                    nostrum commodi, totam quia repellat enim vel quam nemo sequi porro facilis ducimus sed
+                    voluptatibus, numquam recusandae!</p>
+            </li>
+            <li data-category="Malinska">
+                <img src="./images/Building/house7.jpg" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab soluta doloremque, libero tempora
+                    nostrum commodi, totam quia repellat enim vel quam nemo sequi porro facilis ducimus sed
+                    voluptatibus, numquam recusandae!</p>
+            </li>
+            <li data-category="Baska">
+                <img src="./images/Building/house8.jpg" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab soluta doloremque, libero tempora
+                    nostrum commodi, totam quia repellat enim vel quam nemo sequi porro facilis ducimus sed
+                    voluptatibus, numquam recusandae!</p>
+            </li>
+            <li data-category="Baska">
+                <img src="./images/Building/house9.jpg" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab soluta doloremque, libero tempora
+                    nostrum commodi, totam quia repellat enim vel quam nemo sequi porro facilis ducimus sed
+                    voluptatibus, numquam recusandae!</p>
+            </li>
+            <li data-category="Omnisalj">
+                <img src="./images/Building/house10.jpg" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab soluta doloremque, libero tempora
+                    nostrum commodi, totam quia repellat enim vel quam nemo sequi porro facilis ducimus sed
+                    voluptatibus, numquam recusandae!</p>
+            </li>
+            <li data-category="Omnisalj">
+                <img src="./images/Building/house11.jpg" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab soluta doloremque, libero tempora
+                    nostrum commodi, totam quia repellat enim vel quam nemo sequi porro facilis ducimus sed
+                    voluptatibus, numquam recusandae!</p>
+            </li>
+        </ul>
+        </div> -->
+
+
+
+        </div>
+        </article>
+        <article class="intro-section">
+            <div>
+                <h1>Join our community!</h1>
+                <p>We offer a comprehensive suite of core services built on three pillars:
+                    Construction Management and Advisory, Engineering and Technical Services, and Financial Analysis
+                    and
+                    Risk Assessment. These pillars form the foundation of our expertise, ensuring that every phase
+                    of
+                    real estate development is handled with precision and care. In addition, we provide Property
+                    Management and Brokerage services, offering a seamless experience from development to ongoing
+                    management and transactions. We cater to the needs of discerning clients, managing each project
+                    with
+                    unparalleled attention to detail and professionalism.</p>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="footer-upper-container">
+            <img class="header-logo" src="./images/logo.svg" alt="Agency logo">
+            <div class="footer-social-links">
+                <a href="#"><img class="social-link fc" src="./images/facebook-svgrepo-com.svg" alt="Facebook logo"></a>
+                <a href="#"><img class="social-link" src="./images/twitter.svg" alt="Twitter logo"></a>
+                <a href="#"><img class="social-link" src="./images/linkedin.svg" alt="linkedin logo"></a>
+                <a href="#"><img class="social-link" src="./images/youtube-svgrepo-com.svg" alt="Youtube logo"></a>
+            </div>
+            <p>1101 Main Street<br>
+                Budapest, Pest County, 1114<br>
+                <a href="mailto:szt.edina@gmail.com">info@realestate.com</a>
+            </p>
+        </div>
+        <div>
+            <p>
+                &copy; 2025 - Designed & developed by
+                <a href="https://sztedi.netlify.app/" class="link">Sztedina</a>.
+            </p>
+        </div>
+        <a href="#top" class="back-to-top" title="Back to Top">
+            <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
+        </a>
+    </footer>
+    <!-- <script src="script.js"></script> -->
+    <script src="./filter.js">
+
+    </script>
+</body>
+
+</html>
