@@ -26,3 +26,23 @@ section {
     grid-template-columns: 1fr;
     gap: 2em;
 }
+
+@media(min-width: 60em) {
+
+    .contact-section {
+      min-height: 100vh;
+      gap: 5em;
+    }
+  .contactus {
+   width: 40%;
+   margin: auto;
+  }
+ 
+  iframe {
+   
+   
+    height: 30vh;
+  }
+
+  
+}

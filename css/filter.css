@@ -1,12 +1,24 @@
+
 .indicator {
     font-weight: 400;
     text-transform: uppercase;
+    list-style: none;
+    margin-top: 1em;
 }
 
 .indicator li  {
     transition: 0.5s;
+
 }
 
 .indicator li a:hover {
     color: red;
+}
+
+@media(min-width: 45em) {
+    .indicator {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

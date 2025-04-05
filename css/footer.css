@@ -37,3 +37,27 @@ footer {
     right: 15px;
 }
 
+.page-link {
+    text-decoration: underline;
+}
+
+.footer-logo {
+    width: 9rem;
+    height: 3.53em;
+    border-radius: 25%;
+   
+    
+  }
+
+  @media(min-width: 60em) {
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer-upper-container {
+        flex-direction: row;
+        
+    }
+  }
+

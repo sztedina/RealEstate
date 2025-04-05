@@ -5,9 +5,21 @@
     padding: 3em 1em;
     color: var(--white-2);
     display: flex;
+    
+}
+
+.intro-section-div {
     flex-direction: column;
     gap: 2em;
     letter-spacing: 1.2px;
     justify-content: center;
     align-items: center;
+}
+
+@media(min-width: 500px) {
+    #intro-section-div {
+        max-width: 40%;
+        margin: 0 auto;
+     
+    }
 }

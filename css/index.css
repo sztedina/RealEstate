@@ -7,4 +7,24 @@
 
 .mission-section article {
     margin-top: 2em;
+  
+   
+}
+
+@media (min-width: 66em) {
+    .mission-section {
+        min-height: 100vh;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 5em;
+        margin: 4em;
+    }
+
+    .mission-section article {
+        padding: 2em;
+    }
+
+   
+   
 }

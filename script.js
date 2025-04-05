@@ -236,7 +236,7 @@ fetch("./data.json")
       const cardHTML = `
         <div class="card">
           <p class="buy">buy</p>
-          <img src="${item[1].src}" alt="${item[1].alt}">
+          <img loading="lazy" class="img-house" src="${item[1].src}" alt="${item[1].alt}">
           <div class="house-data">
             <p class="numbers">${item[1].street}</p>
             <p class="city">${item[1].city}, ${item[1].country}</p>

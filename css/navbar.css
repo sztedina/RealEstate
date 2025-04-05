@@ -1,23 +1,25 @@
 /* NAV BAR */
 header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 1em;
-    background-color: var(--oxford-blue);
-  }
-
-  nav {
-    display: flex;
-  }
-
-  header {
-    display: flex;
     align-items: center;
     gap: 1em;
     list-style: none;
     position: relative;
+    align-items: center;
+    padding: 0 1em;
+    background-color: var(--oxford-blue);
+    position: fixed;
+    top: 0;
   }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
 
   header::after {
     content: " ";
@@ -30,6 +32,7 @@ header {
   }
 
   .navbar-left > ul {
+    max-width: 50%;
     display: flex;
     align-items: center;
     gap: 1em;
@@ -37,6 +40,7 @@ header {
   }
 
   .navbar-right > ul {
+    max-width: 50%;
     display: flex;
     align-items: center;
     gap: 1em;
