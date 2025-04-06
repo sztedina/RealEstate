@@ -49,7 +49,7 @@ footer {
     
   }
 
-  @media(min-width: 60em) {
+  @media(min-width: 45em) {
 
     footer {
         flex-direction: row;
