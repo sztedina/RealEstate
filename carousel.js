@@ -1,19 +1,15 @@
 fetch("./data.json")
     .then(response => response.json())
     .then(data => {
-       
             const track = document.getElementById("carousel_track")
             const dotsNav = document.getElementById("carousel__nav")
-            data.forEach((house, index) => {
+            data.forEach((house) => {
                 const slideEL = 
-                
                     `
                 <li class="carousel__slide">
                             <img class="carousel__image" src="${house.src}" alt="${house.alt}">
                 </li>
                 `
-                
-                
                 const dotsEl = 
                 `
                 <button class="carousel__indicator"></button>
@@ -25,11 +21,9 @@ fetch("./data.json")
                 Array.from(dotsNav.children)[0].classList.add("current-slide")
               })
               
-        
               const slides = Array.from(track.children)
               const nextButton = document.querySelector('.carousel__button--right')
               const prevButton = document.querySelector('.carousel__button--left')
-              /* const dotsNav = document.querySelector('.carousel__nav') */
               const dots = Array.from(dotsNav.children)
               const slideWidth = slides[0].getBoundingClientRect().width 
               
@@ -46,7 +40,6 @@ fetch("./data.json")
               const updateDots = (currentDot, targetDot) => {
                     targetDot.classList.add('current-slide')
                     currentDot.classList.remove('current-slide')
-                  
               }
               
               const addHideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
@@ -64,7 +57,7 @@ fetch("./data.json")
               
               //Clicking left, moves slides to the left
               
-              prevButton.addEventListener("click", e => {
+              prevButton.addEventListener("click", () => {
                   
                   const currentSlide = track.querySelector('.current-slide')
                   const prevSlide = currentSlide.previousElementSibling
@@ -78,7 +71,7 @@ fetch("./data.json")
               
               //Clicking right, moves slides to the right
               
-              nextButton.addEventListener("click", e => {
+              nextButton.addEventListener("click", () => {
                   const currentSlide = track.querySelector('.current-slide')
                   const nextSlide = currentSlide.nextElementSibling
                   const currentDot = dotsNav.querySelector('.current-slide')
@@ -103,11 +96,10 @@ fetch("./data.json")
                   moveToSLide(track, currentSlide, targetSlide)
                   updateDots(currentDot, targetDot)
                   addHideShowArrows(slides, prevButton, nextButton, targetIndex)
-                  
               })
-        
-          
     })
+
+
 
 
 

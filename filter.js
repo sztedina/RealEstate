@@ -19,22 +19,22 @@ fetch("./data.json")
           </div>
           <div class="data-icons">
             <div>
-              <img class="card-icon" src="/images/card-icons/bed.svg">
+              <img class="card-icon" src="./images/card-icons/bed.svg">
               <p class="subtitle">Beds</p>
               <p class="numbers">${item[1].beds}</p>
             </div>
             <div>
-              <img class="card-icon" src="/images/card-icons/bath.svg">
+              <img class="card-icon" src="./images/card-icons/bath.svg">
               <p class="subtitle">Baths</p>
               <p class="numbers">${item[1].baths}</p>
             </div>
             <div>
-              <img class="card-icon" src="/images/card-icons/level.svg">
+              <img class="card-icon" src="./images/card-icons/level.svg">
               <p class="subtitle">Levels</p>
               <p class="numbers">${item[1].levels}</p>
             </div>
             <div>
-              <img class="card-icon" src="/images/card-icons/square.svg">
+              <img class="card-icon" src="./images/card-icons/square.svg">
               <p class="subtitle">Sqm</p>
               <p class="numbers">${item[1].sqm}</p>
             </div>
@@ -72,8 +72,6 @@ fetch("./data.json")
                 }
             }
         }
-    
-
 })
 
     

@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     padding: 5em;
-    background: url("./images/hero-bg-img.jpg");
+    background: url("../../../images/hero-bg-img.jpg");
     background-position: center;
     background-color: var(--charcoal);
     background-blend-mode: multiply;
@@ -183,7 +183,7 @@
 }
 
 .pagination a:hover {
-    background-color: #007BFF;
+    background-color: hsl(211, 100%, 50%);
     color: white;
 }
 
